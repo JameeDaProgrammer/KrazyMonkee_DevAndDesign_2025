@@ -1,0 +1,145 @@
+*{
+  min-width: 0%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Bebas Neue Regular */
+@font-face {
+  font-family: 'BebasNeue';
+  src: url(AppFonts/BebasNeue-Regular.ttf) format('truetype');
+  font-weight: 400; /* Regular weight */
+  font-style: normal;
+}
+
+/* EB Garamond Italic */
+@font-face {
+  font-family: 'EBGaramond It';
+  src: url(AppFonts/EBGaramond-Italic.ttf) format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* EB Garamond Medium */
+@font-face {
+  font-family: 'EBGaramond Med';
+  src: url(AppFonts/EBGaramond-Medium.ttf) format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* EB Garamond SemiBold */
+@font-face {
+  font-family: 'EBGaramond SemiBold';
+  src: url(AppFonts/EBGaramond-SemiBold.ttf) format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* EB Garamond SemiBold Italic */
+@font-face {
+  font-family: 'EBGaramond SemiBold It';
+  src: url(AppFonts/EBGaramond-SemiBoldItalic.ttf) format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* EB Garamond Regular */
+@font-face {
+  font-family: 'EBGaramond Reg';
+  src: url(AppFonts/EBGaramond-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* EB Garamond Bold */
+@font-face {
+  font-family: 'EBGaramond Bold';
+  src: url(App/AppFonts/EBGaramond-Bold.ttf) format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* EB Garamond ExtraBold */
+@font-face {
+  font-family: 'EBGaramond XBold';
+  src: url(AppFonts/EBGaramond-ExtraBold.ttf) format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* EB Garamond ExtraBold Italic */
+@font-face {
+  font-family: 'EBGaramond XBold It';
+  src: url(AppFonts/EBGaramond-ExtraBoldItalic.ttf) format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+/************************************************************/
+:root {
+    --MainOrange-color: #f26522;
+    --BrightOrange-color: #f78f30;
+    --AccentDarkRed-color: #7f2119;
+    --BLACK-color: #000000;
+    --asheForestBrown-color: #45311e;
+    --DarkGrey-color: #16181a;
+    
+  }
+  
+  body{
+    position: relative;
+    width: 100%;
+  }
+
+
+  #header{
+    background-color: #000000;
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    padding-top: .5em;
+    padding-bottom: .5em;
+  }
+
+  #headerLogo{
+    width: 73%;
+    margin-left: 25px;
+  }
+
+
+
+#navList1{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr .25fr .25fr;
+  list-style-type: none;
+  justify-content: space-between;
+  justify-items: start;
+  padding-top: 1em;
+  
+}
+
+#navList1 > li {
+  color: var(--MainOrange-color);
+    font-family: 'BebasNeue';
+    font-weight: 300;
+    font-size: 2.15em;
+    letter-spacing: 1.5px;
+    
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-left: -1em;
+    
+}
+
+
+.imgs{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+
