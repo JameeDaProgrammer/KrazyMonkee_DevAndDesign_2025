@@ -1,8 +1,4 @@
-*{
-  min-width: 0%;
-  box-sizing: border-box;
-  margin: 0;
-}
+
 
 /* Bebas Neue Regular */
 @font-face {
@@ -83,41 +79,54 @@
     --AccentDarkRed-color: #7f2119;
     --BLACK-color: #000000;
     --asheForestBrown-color: #45311e;
-    --DarkGrey-color: #16181a;
-    
+    --DarkGrey-color: #16181a; 
+  }
+
+  *{
+    min-width: 0%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
   
   body{
-    position: relative;
-    width: 100%;
+    min-height: 100vh; /* Ensure body takes at least full viewport height */
+    width: 100%;      /* Ensure body takes full viewport width */
   }
 
-
-  #header{
+#header{
     background-color: #000000;
     position: relative;
     width: 100%;
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 30% 70%;
     padding-top: .5em;
     padding-bottom: .5em;
-  }
+}
 
-  #headerLogo{
+#headerLogo{
     width: 73%;
     margin-left: 25px;
-  }
+}
 
+nav{
+  position: relative;
+  display: grid;
+  grid-template-columns: 85% 15%;
+  border: #0d01ff 3px solid;
+  width: 100%;
+}
 
 
 #navList1{
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr .25fr .25fr;
+  grid-template-columns: 1fr 1fr 1fr;
   list-style-type: none;
   justify-content: space-between;
   justify-items: start;
   padding-top: 1em;
+  border: #76dc0f 3px solid;
   
 }
 
@@ -127,12 +136,18 @@
     font-weight: 300;
     font-size: 2.15em;
     letter-spacing: 1.5px;
-    
     align-items: center;
     justify-items: center;
     justify-content: center;
     margin-left: -1em;
     
+}
+
+#iconImgs{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: #7f2119 3px solid;
 }
 
 
@@ -142,4 +157,18 @@
   border-radius: 50%;
 }
 
+
+/*@media(max-width: 390px){
+  
+  #header{
+    background-color: #960505;
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    padding-top: .5em;
+    padding-bottom: .5em;
+  }
+
+}
 
